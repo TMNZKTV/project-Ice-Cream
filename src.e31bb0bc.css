@@ -2361,7 +2361,7 @@ ul {
 
 .modal-w {
   position: absolute;
-  width: 450px;
+  width: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -2376,9 +2376,24 @@ ul {
   font-family: DMSans, sans-serif;
   letter-spacing: 0.04em;
 }
+@media (min-width: 768px) {
+  .modal-w {
+    width: 450px;
+  }
+}
 @media (min-width: 1200px) {
   .modal-w {
     width: 528px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-w {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.67;
+    font-family: DMSans, sans-serif;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -2420,12 +2435,21 @@ ul {
 .modal-header {
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.2;
   font-family: DMSans, sans-serif;
   letter-spacing: 0.04em;
   text-align: center;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .modal-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: DMSans, sans-serif;
+    letter-spacing: 0.04em;
+  }
 }
 @media (min-width: 1200px) {
   .modal-header {
@@ -2446,6 +2470,15 @@ ul {
   font-family: DMSans, sans-serif;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    font-family: DMSans, sans-serif;
+    letter-spacing: 0.04em;
+  }
 }
 
 .input-wrapper {
@@ -2519,9 +2552,26 @@ ul {
 .delivery-wrapper {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .delivery-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 
 .delivery-text {
   color: rgba(33, 33, 33, 0.9);
+}
+@media screen and (max-width: 767px) {
+  .delivery-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    font-family: DMSans, sans-serif;
+    letter-spacing: 0.04em;
+  }
 }
 
 .delivery-text::before {
@@ -2554,7 +2604,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 0px 37px;
-  height: 44px;
+  height: 32px;
   border-radius: 22px;
   background-color: #ffffff;
   text-decoration: none;

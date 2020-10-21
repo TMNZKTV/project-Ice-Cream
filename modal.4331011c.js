@@ -120,20 +120,22 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/modal.js":[function(require,module,exports) {
 (function () {
   var refs = {
-    openModalBtn: document.querySelector("[data-open-modal]"),
-    closeModalBtn: document.querySelector("[data-close-modal]"),
-    backdrop: document.querySelector("[data-backdrop]")
+    openModalBtn: document.querySelector('[data-open-modal]'),
+    openModalBtn2: document.querySelector('[data-open-modal-2]'),
+    closeModalBtn: document.querySelector('[data-close-modal]'),
+    backdrop: document.querySelector('[data-backdrop]')
   };
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-  refs.backdrop.addEventListener("click", logBackdropClick);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn2.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.backdrop.addEventListener('click', logBackdropClick);
 
   function toggleModal() {
-    refs.backdrop.classList.toggle("is-hidden");
+    refs.backdrop.classList.toggle('is-hidden');
   }
 
   function logBackdropClick() {
-    console.log("Это клик в бекдроп");
+    console.log('Это клик в бекдроп');
   }
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -164,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60108" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61210" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
